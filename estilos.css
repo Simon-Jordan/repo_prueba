@@ -1,0 +1,197 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#grilla{
+    display: grid;
+    grid-template-areas:
+    "nav header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "footer footer footer";
+    grid-template-rows: 100px 1fr 1fr 1fr 75px;
+    grid-template-columns: 13% 1fr 10%;
+    height: 100vh;
+    margin: 0px;
+}
+
+body{
+    background-color: rgb(24, 24, 23);
+}
+
+/* ------------------------NAVBAR PRINCIPAL-------------------- */
+
+.header__navbar--principal a{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    padding: 1.2rem;
+    background-color: hsl(246, 47%, 52%);
+border-radius: 10px;
+}
+
+.header__navbar--principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    text-align: center;
+    list-style: none;
+}
+
+.border-nav{
+    grid-area: nav;
+    background-color: rgb(24, 24, 23);
+    padding: 20px;
+}
+
+/* -------------------------------HEADER------------------------------------ */
+
+header{
+    grid-area: header;
+    background-color: rgb(24, 24, 23);
+    padding: 15px;
+    
+}
+
+.introduccion{
+    grid-area: productos;
+    background-color: rgb(24, 24, 23);
+    padding: 50px;
+}
+
+/* -----------------------------BUSCADOR------------------------------ */
+
+.buscador{
+    margin-top: 11px;
+    width: 89rem;
+    padding: 15px;
+    border-radius: 10px;
+    font-style: italic;
+    font-size: 25px;
+}
+
+/* ---------------------------------CARRITO----------------------------------- */
+
+.carrito{
+    margin-left: 40px;
+}
+
+.carrito a{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: white;
+    padding: 0.5rem;
+    background-color: hsl(246, 47%, 52%);
+    border-radius: 10px;
+}
+
+/* ----------------------------TEXTO DEL MAIN----------------------- */
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* ------------------------IMAGENES PRODUCTO--------------------- */
+
+.servicios{
+    margin-left: 150px;
+    margin-bottom: 120px;
+    grid-area: servicios;
+    background-color: rgb(24, 24, 23);
+}
+
+.img__componentes{
+    display: flex;
+}
+
+.img__componentes img{
+    width: 40%;
+    padding: 0.5rem;
+}
+
+.img__componentes2{
+    display: flex;
+}
+
+.img__componentes2 img{
+    width: 40%;
+    padding: 0.5rem;
+    
+}
+
+/* -----------------------------PUBLICIDAD------------------------- */
+
+aside{
+    background-image: url(./img/publicidad.jpg);
+    grid-area: publicidad;
+    margin: 20px;
+}
+
+.publi{
+font-size: 15px;
+}
+
+.publicidad{
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* --------------------------------FOOTER------------------------------ */
+
+footer{
+    grid-area: footer;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.logoFooter{
+    width: 150px;
+}
+
+.bloqueFooter{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__menu{
+    list-style: none;
+    text-align: center;
+}
+
+.footer__menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer__lists{
+    color: rgb(255, 0, 0);
+}
+
+
+
+
+
+
+
+
